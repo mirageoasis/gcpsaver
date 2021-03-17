@@ -9,6 +9,31 @@
 //
 // make hash table
 // 
+void rtrim(char*  cmdString){//from right
+	
+	int end = strlen(cmdString) - 1;
+	
+	while(isspace(cmdString[end])){
+		end--;
+	}
+
+	end++;
+	
+	realloc(cmdString, end);
+	cmdString[end] = '\0';
+}
+
+void ltrim(char* cmdString){//from left
+	
+	char* temp = (char*)malloc(sizeof(char) * strlen(cmdString));
+	strcpy(temp, cmdString);
+
+	while(){
+
+	}
+
+}
+
 
 cmdEnum CODEalloc(char* cmdString){
 	
@@ -21,7 +46,8 @@ cmdEnum CODEalloc(char* cmdString){
 			s[i] = 0;
 			break;
 		}
-	}
+	}//strtok change! not this way! 
+	// for function like q h d hi if there are any string other than itself print the result wrong!
 
 	//printf("%s\n", s);
 

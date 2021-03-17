@@ -14,12 +14,16 @@
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1615901700,,"q"
 :wq
-|2,0,1615901245,,"wq"
+|2,0,1615993007,,"wq"
+:q
+|2,0,1615989283,,"q"
 :q!
-|2,0,1615893932,,"q!"
+|2,0,1615903583,,"q!"
+:wNext
+|2,0,1615903056,,"wNext"
+:sort
+|2,0,1615902035,,"sort"
 :200
 |2,0,1615819601,,"200"
 :108
@@ -46,270 +50,386 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
+"0	LINE	0
+	char* inputTaker(FILE *fp);
+	cmdEnum CODEalloc(char* cmdString);
+|3,0,0,1,2,0,1615902084,"char* inputTaker(FILE *fp);","cmdEnum CODEalloc(char* cmdString);"
+"1	CHAR	0
+	
+	
+|3,0,1,0,2,0,1615902076,"",""
 "q	CHAR	0
 	!:wq€kb€kbq!€kb€kb€kb
 |3,0,26,0,1,0,1615893928,"!:wq€kb€kbq!€kb€kb€kb"
+""-	CHAR	0
+	;
+|3,1,36,0,1,0,1615902094,";"
 
 # global variables:
 
 # File marks:
-'0  1  0  ~/proj1/data.h
-|4,48,1,0,1615901700,"~/proj1/data.h"
-'1  41  0  ~/proj1/print.c
-|4,49,41,0,1615901665,"~/proj1/print.c"
-'2  2  0  ~/proj1/history.c
-|4,50,2,0,1615901655,"~/proj1/history.c"
-'3  48  6  ~/proj1/main.c
-|4,51,48,6,1615901646,"~/proj1/main.c"
-'4  138  9  ~/proj1/main.c
-|4,52,138,9,1615901463,"~/proj1/main.c"
-'5  138  9  ~/proj1/main.c
-|4,53,138,9,1615901463,"~/proj1/main.c"
-'6  29  9  ~/proj1/data.h
-|4,54,29,9,1615901245,"~/proj1/data.h"
-'7  29  9  ~/proj1/data.h
-|4,55,29,9,1615901245,"~/proj1/data.h"
-'8  9  26  ~/proj1/function.h
-|4,56,9,26,1615901229,"~/proj1/function.h"
-'9  1  0  ~/print.c
-|4,57,1,0,1615896694,"~/print.c"
+'0  21  0  ~/proj1/main.c
+|4,48,21,0,1615993007,"~/proj1/main.c"
+'1  1  0  ~/main.c
+|4,49,1,0,1615989283,"~/main.c"
+'2  92  0  ~/proj1/main.c
+|4,50,92,0,1615904015,"~/proj1/main.c"
+'3  67  0  ~/proj1/main.c
+|4,51,67,0,1615904015,"~/proj1/main.c"
+'4  50  95  ~/proj1/main.c
+|4,52,50,95,1615903689,"~/proj1/main.c"
+'5  25  95  ~/proj1/main.c
+|4,53,25,95,1615903689,"~/proj1/main.c"
+'6  49  18  ~/proj1/main.c
+|4,54,49,18,1615903619,"~/proj1/main.c"
+'7  49  18  ~/proj1/main.c
+|4,55,49,18,1615903619,"~/proj1/main.c"
+'8  24  18  ~/proj1/main.c
+|4,56,24,18,1615903619,"~/proj1/main.c"
+'9  24  18  ~/proj1/main.c
+|4,57,24,18,1615903619,"~/proj1/main.c"
 
 # Jumplist (newest first):
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901700,"~/proj1/data.h"
--'  41  0  ~/proj1/print.c
-|4,39,41,0,1615901665,"~/proj1/print.c"
--'  41  0  ~/proj1/print.c
-|4,39,41,0,1615901665,"~/proj1/print.c"
--'  1  0  ~/proj1/print.c
-|4,39,1,0,1615901659,"~/proj1/print.c"
--'  1  0  ~/proj1/print.c
-|4,39,1,0,1615901659,"~/proj1/print.c"
--'  2  0  ~/proj1/history.c
-|4,39,2,0,1615901655,"~/proj1/history.c"
--'  2  0  ~/proj1/history.c
-|4,39,2,0,1615901655,"~/proj1/history.c"
--'  2  0  ~/proj1/history.c
-|4,39,2,0,1615901655,"~/proj1/history.c"
--'  2  0  ~/proj1/history.c
-|4,39,2,0,1615901655,"~/proj1/history.c"
--'  1  0  ~/proj1/history.c
-|4,39,1,0,1615901653,"~/proj1/history.c"
--'  1  0  ~/proj1/history.c
-|4,39,1,0,1615901653,"~/proj1/history.c"
--'  1  0  ~/proj1/history.c
-|4,39,1,0,1615901653,"~/proj1/history.c"
--'  1  0  ~/proj1/history.c
-|4,39,1,0,1615901653,"~/proj1/history.c"
--'  48  6  ~/proj1/main.c
-|4,39,48,6,1615901646,"~/proj1/main.c"
--'  48  6  ~/proj1/main.c
-|4,39,48,6,1615901646,"~/proj1/main.c"
--'  48  6  ~/proj1/main.c
-|4,39,48,6,1615901646,"~/proj1/main.c"
--'  48  6  ~/proj1/main.c
-|4,39,48,6,1615901646,"~/proj1/main.c"
--'  48  6  ~/proj1/main.c
-|4,39,48,6,1615901646,"~/proj1/main.c"
--'  48  6  ~/proj1/main.c
-|4,39,48,6,1615901646,"~/proj1/main.c"
--'  48  6  ~/proj1/main.c
-|4,39,48,6,1615901646,"~/proj1/main.c"
--'  48  6  ~/proj1/main.c
-|4,39,48,6,1615901646,"~/proj1/main.c"
+-'  21  0  ~/proj1/main.c
+|4,39,21,0,1615993007,"~/proj1/main.c"
+-'  16  0  ~/proj1/main.c
+|4,39,16,0,1615991946,"~/proj1/main.c"
 -'  1  0  ~/proj1/main.c
-|4,39,1,0,1615901488,"~/proj1/main.c"
+|4,39,1,0,1615991455,"~/proj1/main.c"
+-'  1  0  ~/main.c
+|4,39,1,0,1615989283,"~/main.c"
+-'  1  0  ~/main.c
+|4,39,1,0,1615989283,"~/main.c"
+-'  92  0  ~/proj1/main.c
+|4,39,92,0,1615904015,"~/proj1/main.c"
+-'  67  0  ~/proj1/main.c
+|4,39,67,0,1615904015,"~/proj1/main.c"
+-'  67  0  ~/proj1/main.c
+|4,39,67,0,1615904015,"~/proj1/main.c"
+-'  50  95  ~/proj1/main.c
+|4,39,50,95,1615903689,"~/proj1/main.c"
+-'  25  95  ~/proj1/main.c
+|4,39,25,95,1615903689,"~/proj1/main.c"
+-'  25  95  ~/proj1/main.c
+|4,39,25,95,1615903689,"~/proj1/main.c"
 -'  1  0  ~/proj1/main.c
-|4,39,1,0,1615901488,"~/proj1/main.c"
+|4,39,1,0,1615903623,"~/proj1/main.c"
 -'  1  0  ~/proj1/main.c
-|4,39,1,0,1615901488,"~/proj1/main.c"
+|4,39,1,0,1615903623,"~/proj1/main.c"
+-'  49  18  ~/proj1/main.c
+|4,39,49,18,1615903619,"~/proj1/main.c"
+-'  24  18  ~/proj1/main.c
+|4,39,24,18,1615903619,"~/proj1/main.c"
+-'  24  18  ~/proj1/main.c
+|4,39,24,18,1615903619,"~/proj1/main.c"
+-'  24  18  ~/proj1/main.c
+|4,39,24,18,1615903619,"~/proj1/main.c"
+-'  24  18  ~/proj1/main.c
+|4,39,24,18,1615903619,"~/proj1/main.c"
 -'  1  0  ~/proj1/main.c
-|4,39,1,0,1615901488,"~/proj1/main.c"
+|4,39,1,0,1615903591,"~/proj1/main.c"
 -'  1  0  ~/proj1/main.c
-|4,39,1,0,1615901488,"~/proj1/main.c"
+|4,39,1,0,1615903591,"~/proj1/main.c"
+-'  10  0  ~/proj1/dump.c
+|4,39,10,0,1615903583,"~/proj1/dump.c"
+-'  10  0  ~/proj1/dump.c
+|4,39,10,0,1615903583,"~/proj1/dump.c"
+-'  10  0  ~/proj1/dump.c
+|4,39,10,0,1615903583,"~/proj1/dump.c"
+-'  10  0  ~/proj1/dump.c
+|4,39,10,0,1615903583,"~/proj1/dump.c"
+-'  10  0  ~/proj1/dump.c
+|4,39,10,0,1615903583,"~/proj1/dump.c"
+-'  10  0  ~/proj1/dump.c
+|4,39,10,0,1615903583,"~/proj1/dump.c"
+-'  10  0  ~/proj1/dump.c
+|4,39,10,0,1615903583,"~/proj1/dump.c"
+-'  10  0  ~/proj1/dump.c
+|4,39,10,0,1615903583,"~/proj1/dump.c"
+-'  10  0  ~/proj1/dump.c
+|4,39,10,0,1615903583,"~/proj1/dump.c"
+-'  10  0  ~/proj1/dump.c
+|4,39,10,0,1615903583,"~/proj1/dump.c"
+-'  10  0  ~/proj1/dump.c
+|4,39,10,0,1615903583,"~/proj1/dump.c"
+-'  10  0  ~/proj1/dump.c
+|4,39,10,0,1615903583,"~/proj1/dump.c"
+-'  10  0  ~/proj1/dump.c
+|4,39,10,0,1615903583,"~/proj1/dump.c"
+-'  10  0  ~/proj1/dump.c
+|4,39,10,0,1615903583,"~/proj1/dump.c"
+-'  10  0  ~/proj1/dump.c
+|4,39,10,0,1615903583,"~/proj1/dump.c"
+-'  10  0  ~/proj1/dump.c
+|4,39,10,0,1615903583,"~/proj1/dump.c"
 -'  1  0  ~/proj1/main.c
-|4,39,1,0,1615901488,"~/proj1/main.c"
+|4,39,1,0,1615903197,"~/proj1/main.c"
 -'  1  0  ~/proj1/main.c
-|4,39,1,0,1615901488,"~/proj1/main.c"
+|4,39,1,0,1615903197,"~/proj1/main.c"
+-'  1  0  ~/proj1/dump.c
+|4,39,1,0,1615903125,"~/proj1/dump.c"
+-'  1  0  ~/proj1/dump.c
+|4,39,1,0,1615903125,"~/proj1/dump.c"
+-'  1  0  ~/proj1/dump.c
+|4,39,1,0,1615903125,"~/proj1/dump.c"
+-'  1  0  ~/proj1/dump.c
+|4,39,1,0,1615903125,"~/proj1/dump.c"
+-'  1  0  ~/proj1/dump.c
+|4,39,1,0,1615903125,"~/proj1/dump.c"
+-'  1  0  ~/proj1/dump.c
+|4,39,1,0,1615903125,"~/proj1/dump.c"
+-'  1  0  ~/proj1/dump.c
+|4,39,1,0,1615903125,"~/proj1/dump.c"
+-'  1  0  ~/proj1/dump.c
+|4,39,1,0,1615903125,"~/proj1/dump.c"
+-'  1  0  ~/proj1/dump.c
+|4,39,1,0,1615903125,"~/proj1/dump.c"
+-'  1  0  ~/proj1/dump.c
+|4,39,1,0,1615903125,"~/proj1/dump.c"
+-'  1  0  ~/proj1/dump.c
+|4,39,1,0,1615903125,"~/proj1/dump.c"
+-'  1  0  ~/proj1/dump.c
+|4,39,1,0,1615903125,"~/proj1/dump.c"
+-'  1  0  ~/proj1/dump.c
+|4,39,1,0,1615903125,"~/proj1/dump.c"
+-'  1  0  ~/proj1/dump.c
+|4,39,1,0,1615903125,"~/proj1/dump.c"
+-'  1  0  ~/proj1/dump.c
+|4,39,1,0,1615903125,"~/proj1/dump.c"
+-'  1  0  ~/proj1/dump.c
+|4,39,1,0,1615903125,"~/proj1/dump.c"
+-'  73  0  ~/proj1/main.c
+|4,39,73,0,1615903120,"~/proj1/main.c"
+-'  74  0  ~/proj1/main.c
+|4,39,74,0,1615903120,"~/proj1/main.c"
+-'  48  0  ~/proj1/main.c
+|4,39,48,0,1615903120,"~/proj1/main.c"
+-'  49  0  ~/proj1/main.c
+|4,39,49,0,1615903120,"~/proj1/main.c"
+-'  48  0  ~/proj1/main.c
+|4,39,48,0,1615903120,"~/proj1/main.c"
+-'  48  0  ~/proj1/main.c
+|4,39,48,0,1615903120,"~/proj1/main.c"
+-'  48  0  ~/proj1/main.c
+|4,39,48,0,1615903120,"~/proj1/main.c"
+-'  48  0  ~/proj1/main.c
+|4,39,48,0,1615903120,"~/proj1/main.c"
+-'  49  0  ~/proj1/main.c
+|4,39,49,0,1615903120,"~/proj1/main.c"
+-'  48  0  ~/proj1/main.c
+|4,39,48,0,1615903120,"~/proj1/main.c"
+-'  48  0  ~/proj1/main.c
+|4,39,48,0,1615903120,"~/proj1/main.c"
+-'  48  0  ~/proj1/main.c
+|4,39,48,0,1615903120,"~/proj1/main.c"
 -'  1  0  ~/proj1/main.c
-|4,39,1,0,1615901488,"~/proj1/main.c"
--'  138  9  ~/proj1/main.c
-|4,39,138,9,1615901463,"~/proj1/main.c"
--'  138  9  ~/proj1/main.c
-|4,39,138,9,1615901463,"~/proj1/main.c"
--'  138  9  ~/proj1/main.c
-|4,39,138,9,1615901463,"~/proj1/main.c"
--'  138  9  ~/proj1/main.c
-|4,39,138,9,1615901463,"~/proj1/main.c"
--'  138  9  ~/proj1/main.c
-|4,39,138,9,1615901463,"~/proj1/main.c"
--'  138  9  ~/proj1/main.c
-|4,39,138,9,1615901463,"~/proj1/main.c"
--'  138  9  ~/proj1/main.c
-|4,39,138,9,1615901463,"~/proj1/main.c"
--'  138  9  ~/proj1/main.c
-|4,39,138,9,1615901463,"~/proj1/main.c"
--'  138  9  ~/proj1/main.c
-|4,39,138,9,1615901463,"~/proj1/main.c"
--'  138  9  ~/proj1/main.c
-|4,39,138,9,1615901463,"~/proj1/main.c"
--'  138  9  ~/proj1/main.c
-|4,39,138,9,1615901463,"~/proj1/main.c"
--'  138  9  ~/proj1/main.c
-|4,39,138,9,1615901463,"~/proj1/main.c"
--'  138  9  ~/proj1/main.c
-|4,39,138,9,1615901463,"~/proj1/main.c"
--'  138  9  ~/proj1/main.c
-|4,39,138,9,1615901463,"~/proj1/main.c"
--'  138  9  ~/proj1/main.c
-|4,39,138,9,1615901463,"~/proj1/main.c"
--'  138  9  ~/proj1/main.c
-|4,39,138,9,1615901463,"~/proj1/main.c"
+|4,39,1,0,1615903061,"~/proj1/main.c"
 -'  1  0  ~/proj1/main.c
-|4,39,1,0,1615901418,"~/proj1/main.c"
+|4,39,1,0,1615903061,"~/proj1/main.c"
 -'  1  0  ~/proj1/main.c
-|4,39,1,0,1615901418,"~/proj1/main.c"
+|4,39,1,0,1615903061,"~/proj1/main.c"
 -'  1  0  ~/proj1/main.c
-|4,39,1,0,1615901418,"~/proj1/main.c"
--'  1  0  ~/proj1/main.c
-|4,39,1,0,1615901418,"~/proj1/main.c"
--'  1  0  ~/proj1/main.c
-|4,39,1,0,1615901418,"~/proj1/main.c"
--'  1  0  ~/proj1/main.c
-|4,39,1,0,1615901418,"~/proj1/main.c"
--'  1  0  ~/proj1/main.c
-|4,39,1,0,1615901418,"~/proj1/main.c"
--'  1  0  ~/proj1/main.c
-|4,39,1,0,1615901418,"~/proj1/main.c"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  29  9  ~/proj1/data.h
-|4,39,29,9,1615901245,"~/proj1/data.h"
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901235,"~/proj1/data.h"
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901235,"~/proj1/data.h"
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901235,"~/proj1/data.h"
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901235,"~/proj1/data.h"
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901235,"~/proj1/data.h"
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901235,"~/proj1/data.h"
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901235,"~/proj1/data.h"
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901235,"~/proj1/data.h"
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901235,"~/proj1/data.h"
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901235,"~/proj1/data.h"
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901235,"~/proj1/data.h"
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901235,"~/proj1/data.h"
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901235,"~/proj1/data.h"
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901235,"~/proj1/data.h"
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901235,"~/proj1/data.h"
--'  1  0  ~/proj1/data.h
-|4,39,1,0,1615901235,"~/proj1/data.h"
--'  9  26  ~/proj1/function.h
-|4,39,9,26,1615901229,"~/proj1/function.h"
--'  9  26  ~/proj1/function.h
-|4,39,9,26,1615901229,"~/proj1/function.h"
--'  9  26  ~/proj1/function.h
-|4,39,9,26,1615901229,"~/proj1/function.h"
--'  9  26  ~/proj1/function.h
-|4,39,9,26,1615901229,"~/proj1/function.h"
--'  9  26  ~/proj1/function.h
-|4,39,9,26,1615901229,"~/proj1/function.h"
--'  9  26  ~/proj1/function.h
-|4,39,9,26,1615901229,"~/proj1/function.h"
--'  9  26  ~/proj1/function.h
-|4,39,9,26,1615901229,"~/proj1/function.h"
--'  9  26  ~/proj1/function.h
-|4,39,9,26,1615901229,"~/proj1/function.h"
--'  9  26  ~/proj1/function.h
-|4,39,9,26,1615901229,"~/proj1/function.h"
--'  9  26  ~/proj1/function.h
-|4,39,9,26,1615901229,"~/proj1/function.h"
--'  9  26  ~/proj1/function.h
-|4,39,9,26,1615901229,"~/proj1/function.h"
--'  9  26  ~/proj1/function.h
-|4,39,9,26,1615901229,"~/proj1/function.h"
--'  9  26  ~/proj1/function.h
-|4,39,9,26,1615901229,"~/proj1/function.h"
--'  9  26  ~/proj1/function.h
-|4,39,9,26,1615901229,"~/proj1/function.h"
+|4,39,1,0,1615903061,"~/proj1/main.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  16  0  ~/proj1/dump.c
+|4,39,16,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  16  0  ~/proj1/dump.c
+|4,39,16,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  16  0  ~/proj1/dump.c
+|4,39,16,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  16  0  ~/proj1/dump.c
+|4,39,16,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  16  0  ~/proj1/dump.c
+|4,39,16,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  16  0  ~/proj1/dump.c
+|4,39,16,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  16  0  ~/proj1/dump.c
+|4,39,16,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  16  0  ~/proj1/dump.c
+|4,39,16,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
+-'  5  0  ~/proj1/dump.c
+|4,39,5,0,1615903059,"~/proj1/dump.c"
 
 # History of marks within files (newest to oldest):
 
+> ~/proj1/main.c
+	*	1615993006	0
+	"	21	0
+	^	21	1
+	.	23	22
+	+	283	0
+	+	47	27
+	+	191	30
+	+	192	0
+	+	214	21
+	+	117	0
+	+	73	1
+	+	36	0
+	+	12	29
+	+	24	1
+	+	26	28
+	+	27	0
+	+	31	0
+	+	19	0
+	+	16	0
+	+	26	38
+	+	12	40
+	+	19	0
+	+	16	7
+	+	31	9
+	+	32	0
+	+	34	0
+	+	17	0
+	+	15	1
+	+	13	1
+	+	14	0
+	+	16	0
+	+	14	29
+	+	15	1
+	+	15	0
+	+	14	31
+	+	16	7
+	+	17	1
+	+	13	1
+	+	13	61
+	+	13	62
+	+	24	11
+	+	22	24
+	+	13	26
+	+	13	25
+	+	21	0
+	+	19	6
+	+	16	19
+	+	19	0
+	+	20	0
+	+	16	0
+	+	17	0
+	+	17	19
+	+	17	18
+	+	22	0
+	+	18	0
+	+	17	11
+	+	16	7
+	+	29	0
+	+	28	0
+	+	24	1
+	+	28	61
+	+	30	0
+	+	29	24
+	+	22	0
+	+	13	26
+	+	14	0
+	+	16	23
+	+	17	7
+	+	20	5
+	+	25	0
+	+	24	0
+	+	22	1
+	+	22	0
+	+	22	25
+	+	23	22
+
+> ~/main.c
+	*	1615989282	0
+	"	1	0
+	^	154	1
+	.	154	0
+	+	1	21
+	+	154	0
+
+> ~/proj1/dump.c
+	*	1615903582	0
+	"	10	0
+	^	10	1
+	.	10	0
+	+	6	31
+	+	22	0
+	+	16	0
+	+	4	18
+	+	16	12
+	+	21	0
+	+	14	0
+	+	8	18
+	+	12	0
+	+	8	35
+	+	10	0
+
+> ~/proj1/print.c
+	*	1615902661	0
+	"	1	0
+
+> ~/proj1/function.h
+	*	1615902110	0
+	"	9	0
+	^	9	0
+	.	10	0
+	+	14	26
+	+	1	0
+	+	1	17
+	+	11	0
+	+	8	0
+	+	9	0
+	+	2	0
+	+	3	0
+	+	9	0
+	+	6	0
+	+	10	0
+
 > ~/proj1/data.h
-	*	1615901696	0
+	*	1615902022	0
 	"	1	0
 	^	29	10
 	.	29	9
 	+	29	9
 
-> ~/proj1/print.c
-	*	1615901661	0
-	"	41	0
+> ~/data.h
+	*	1615902010	0
+	"	1	0
 
 > ~/proj1/history.c
 	*	1615901655	0
 	"	2	0
-
-> ~/proj1/main.c
-	*	1615901644	0
-	"	48	6
-	^	86	1
-	.	189	21
-	+	258	0
-	+	22	27
-	+	166	30
-	+	167	0
-	+	189	21
-
-> ~/proj1/function.h
-	*	1615901228	0
-	"	9	26
-	^	9	27
-	.	9	26
-	+	9	26
 
 > ~/print.c
 	*	1615896691	0
@@ -324,14 +444,6 @@ $
 	^	24	0
 	.	23	1
 	+	23	1
-
-> ~/main.c
-	*	1615896584	0
-	"	154	0
-	^	154	1
-	.	154	0
-	+	1	21
-	+	154	0
 
 > ~/makefile
 	*	1615896518	0
