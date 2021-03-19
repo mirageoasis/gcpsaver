@@ -18,7 +18,7 @@ void rtrim(char*  cmdString){//from right
 	}
 
 	end++;
-	
+	printf("no!");	
 	realloc(cmdString, end);
 	cmdString[end] = '\0';
 }
@@ -28,48 +28,58 @@ void ltrim(char* cmdString){//from left
 	char* temp = (char*)malloc(sizeof(char) * strlen(cmdString));
 	strcpy(temp, cmdString);
 
-	while(){
-
-	}
-
 }
 
 
 cmdEnum CODEalloc(char* cmdString){
 	
 	cmdEnum ret;
+	int count = 0;
 
+	char* saver[3] ={NULL, };
 	char* s = (char*)calloc(strlen(cmdString) + 1, sizeof(char));
-	for(int i = 0; i < strlen(cmdString); i++){
-		s[i] = cmdString[i];
-		if(cmdString[i] == '\0' || cmdString[i] == ' '){
-			s[i] = 0;
-			break;
-		}
-	}//strtok change! not this way! 
+	strcpy(s, cmdString);	
+
+	char* ptr = strtok(s, " \t");
+	
+	while(ptr != NULL){//일단 space 기준으로만 check
+		saver[count++] = ptr;
+		printf("%s\n", ptr);
+		ptr = strtok(NULL, " \t");
+		if(count == 2) break;
+	}
+//	printf("strtok pass!\n");
+
+//	for(int i=0; i < count; i++) printf("%s\n", saver[i]);
+
+//	for(int i = 0; i < strlen(cmdString); i++){
+//		s[i] = cmdString[i];
+//		if(cmdString[i] == '\0' || cmdString[i] == ' '){
+//			s[i] = 0;
+//			break;
+//		}
+//	}//strtok change! not this way! 
 	// for function like q h d hi if there are any string other than itself print the result wrong!
 
 	//printf("%s\n", s);
 
-	if(!strcmp(cmdString, "q") || !strcmp(cmdString, "quit")) {
+	if((!strcmp(saver[0], "q") || !strcmp(saver[0], "quit")) && saver[1] == NULL) {
 		ret = CODE_QUIT;
-	}else if(!strcmp(cmdString, "h") || !strcmp(cmdString, "help")){
+	}else if((!strcmp(saver[0], "h") || !strcmp(saver[0], "help")) && saver[1] == NULL){
 		ret = CODE_HELP;
-	}else if(!strcmp(cmdString, "d") || !strcmp(cmdString, "dir")){
+	}else if((!strcmp(saver[0], "d") || !strcmp(saver[0], "dir")) && saver[1] == NULL){
 		ret = CODE_DIR;
-	}else if(!strcmp(cmdString, "hi") || !strcmp(cmdString, "history")){
+	}else if((!strcmp(saver[0], "hi") || !strcmp(saver[0], "history")) && saver[1] == NULL){
 		ret = CODE_HISTORY;
-	}else if(!strcmp(s, "du") || !strcmp(s, "dump")){
+	}else if(!strcmp(saver[0], "du") || !strcmp(saver[9], "dump")){
 		ret = CODE_DUMP;
-	}else if(!strcmp(s, "e") || !strcmp(s, "edit")){
+	}else if(!strcmp(saver[0], "e") || !strcmp(saver[0], "edit")){
 		ret = CODE_EDIT;
-	}else if(!strcmp(s, "f") || !strcmp(s, "fill")){
+	}else if(!strcmp(saver[0], "f") || !strcmp(saver[0], "fill")){
 		ret = CODE_FILL;
-	}else if(!strcmp(s, "du") || !strcmp(s, "dump")){
-		ret = CODE_DUMP;
-	}else if(!strcmp(cmdString, "opcode mnemonic")){
+	}else if(!strcmp(saver[0], "opcode") && !strcmp(saver[1], "mnemonic") && saver[2] == NULL){
 		ret = CODE_OPMEN;
-	}else if(!strcmp(cmdString, "opcodelist")){
+	}else if(!strcmp(saver[0], "opcodelist") && saver[1] == NULL){
 		ret = CODE_OPLIST;
 	}else{
 		ret = CODE_ERR;
@@ -131,6 +141,7 @@ int main(){
 		printf("sicsim> ");
 		if((commandString = inputTaker(stdin)) == NULL) continue;
 		cmd = CODEalloc(commandString); 
+		//printf("code alloc is fine!\n");
 
 		if(cmd != CODE_QUIT &&  cmd != CODE_ERR) historyMaker(head, &tail, commandString);
 
@@ -152,6 +163,7 @@ int main(){
 				break;
 			case CODE_DUMP:
 				printf("dump not yet!\n");
+				dump();
 				break;
 			case CODE_EDIT:
 				printf("edit not yet!\n");
